@@ -52,15 +52,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "one"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "-target ~/code"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "mode=prod"
+            argument = "9"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

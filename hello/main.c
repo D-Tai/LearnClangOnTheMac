@@ -10,8 +10,9 @@
 #include <time.h>
 #include <stdlib.h>
 #include <strings.h>
+#include "chapterNine.h"
 #include "chapterTen.h"
-#include "chapterEleven.h";
+#include "chapterEleven.h"
 
 void sayHello(int number);
 void isOddFoo(void);
@@ -28,23 +29,27 @@ void chapterEight(void);
 int rollOnce(void);
 void printfForDice(int result[]);
 void printFullName(char firstName[], char lastName[]);
-void chapterNine();
-void countWords();
-void readLine(char *line);
 
 int main(int argNum, char** arg) {
     
-    handleFile();
     
-    return 0;
-
-    dataStructure();
     printf("The number of arguments is %d \n", argNum);
-    for (int i = 0; i<argNum; i++) {
-        printf("arguments %d is %s \n", i, arg[i]);
+    printf("argument is %s \n", arg[1]);
+    int chapter = atoi(arg[1]);
+    switch (chapter) {
+        case 9:
+            chapterNine();
+            break;
+        case 10:
+            dataStructure();
+            break;
+        case 11:
+            handleFile();
+            break;
+        default:
+            break;
     }
-    // insert code here...
-    printf("Hello, World!\n");
+    return 0;
     int sum = 0;
     for (int i = 0; i<=10; i++) {
         sum += i;
@@ -270,7 +275,7 @@ void rollDice(void) {
 }
 
 int rollOnce(void) {
-    srand(clock());
+    srand((unsigned int)clock());
     int i = rand();
     return (i%kDiceSize)+1;
 }
@@ -290,27 +295,5 @@ void printFullName(char *firstName, char *lastName) {
     printf("%s \n", fullName);
 }
 
-# define kMaxLineLength 200
 
-void chapterNine() {
-    printf("========== Divide Line ============= \n");
-    countWords();
-};
 
-void countWords() {
-    char line[kMaxLineLength];
-    readLine(&line);
-}
-
-void readLine(char *line) {
-    int inputLength = 0;
-    int c;
-    printf("Please input something: \n");
-    while ((c = getchar())!= EOF && inputLength < kMaxLineLength && c != '\n') {
-        *line++ = c;
-        inputLength++;
-    }
-    *line = '\0';
-    printf("line is %s \n", line);
-
-}
