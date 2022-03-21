@@ -31,10 +31,8 @@ void printfForDice(int result[]);
 void printFullName(char firstName[], char lastName[]);
 
 int main(int argNum, char** arg) {
-    
-    
     printf("The number of arguments is %d \n", argNum);
-    printf("argument is %s \n", arg[1]);
+    printf("You are runing chapter %s \n", arg[1]);
     int chapter = atoi(arg[1]);
     switch (chapter) {
         case 9:

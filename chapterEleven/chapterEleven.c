@@ -15,7 +15,7 @@ void handleFile() {
     struct passwd *pwd = getpwuid(usr);
     printf("User's directory is %s \n", pwd->pw_dir);
     chdir(pwd->pw_dir);
-    char filePath[] = "./code/hello/hello/brick.txt";
+    char filePath[] = "./code/hello/chapterEleven/brick.txt";
     printf("\nBefore Write: \n");
     readAndPrintFile(filePath);
     char appendContent[] = "Hello World";

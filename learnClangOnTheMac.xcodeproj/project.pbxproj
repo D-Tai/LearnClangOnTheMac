@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B81D05E27A5199A007CFBDA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B81D05D27A5199A007CFBDA /* main.c */; };
-		2B81D06627B138AE007CFBDA /* isOdd.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B81D06527B138AD007CFBDA /* isOdd.c */; };
 		2BB17DF727D6EE1B0016E0DE /* chapterTen.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BB17DF627D6EE1B0016E0DE /* chapterTen.c */; };
 		2BB17DFC27D9F14A0016E0DE /* chapterEleven.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BB17DFB27D9F14A0016E0DE /* chapterEleven.c */; };
 		2BB17E0127E3003F0016E0DE /* chapterNine.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BB17E0027E3003F0016E0DE /* chapterNine.c */; };
@@ -27,17 +26,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B81D05A27A5199A007CFBDA /* hello */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hello; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B81D05A27A5199A007CFBDA /* learnClangOnTheMac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = learnClangOnTheMac; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B81D05D27A5199A007CFBDA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		2B81D06427B138AD007CFBDA /* isOdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isOdd.h; sourceTree = "<group>"; };
-		2B81D06527B138AD007CFBDA /* isOdd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = isOdd.c; sourceTree = "<group>"; };
 		2BB17DF527D6EE1B0016E0DE /* chapterTen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapterTen.h; sourceTree = "<group>"; };
 		2BB17DF627D6EE1B0016E0DE /* chapterTen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapterTen.c; sourceTree = "<group>"; };
 		2BB17DFA27D9F14A0016E0DE /* chapterEleven.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapterEleven.h; sourceTree = "<group>"; };
 		2BB17DFB27D9F14A0016E0DE /* chapterEleven.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapterEleven.c; sourceTree = "<group>"; };
 		2BB17DFE27D9FBC30016E0DE /* brick.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = brick.txt; sourceTree = "<group>"; };
-		2BB17DFF27E3003F0016E0DE /* chapterNine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = chapterNine.h; path = hello/chapterNine.h; sourceTree = "<group>"; };
-		2BB17E0027E3003F0016E0DE /* chapterNine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = chapterNine.c; path = hello/chapterNine.c; sourceTree = "<group>"; };
+		2BB17DFF27E3003F0016E0DE /* chapterNine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapterNine.h; sourceTree = "<group>"; };
+		2BB17E0027E3003F0016E0DE /* chapterNine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chapterNine.c; sourceTree = "<group>"; };
+		2BB17E0227E6000F0016E0DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +52,11 @@
 		2B81D05127A5199A007CFBDA = {
 			isa = PBXGroup;
 			children = (
-				2BB17DFF27E3003F0016E0DE /* chapterNine.h */,
-				2BB17E0027E3003F0016E0DE /* chapterNine.c */,
-				2B81D06427B138AD007CFBDA /* isOdd.h */,
-				2B81D06527B138AD007CFBDA /* isOdd.c */,
-				2B81D05C27A5199A007CFBDA /* hello */,
+				2BB17E0527E81D610016E0DE /* chapterEleven */,
+				2BB17E0427E81D490016E0DE /* chapterTen */,
+				2BB17E0327E602BD0016E0DE /* chapterNine */,
+				2BB17E0227E6000F0016E0DE /* README.md */,
+				2B81D05D27A5199A007CFBDA /* main.c */,
 				2B81D05B27A5199A007CFBDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,30 +64,45 @@
 		2B81D05B27A5199A007CFBDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B81D05A27A5199A007CFBDA /* hello */,
+				2B81D05A27A5199A007CFBDA /* learnClangOnTheMac */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B81D05C27A5199A007CFBDA /* hello */ = {
+		2BB17E0327E602BD0016E0DE /* chapterNine */ = {
 			isa = PBXGroup;
 			children = (
-				2B81D05D27A5199A007CFBDA /* main.c */,
+				2BB17DFF27E3003F0016E0DE /* chapterNine.h */,
+				2BB17E0027E3003F0016E0DE /* chapterNine.c */,
+			);
+			path = chapterNine;
+			sourceTree = "<group>";
+		};
+		2BB17E0427E81D490016E0DE /* chapterTen */ = {
+			isa = PBXGroup;
+			children = (
 				2BB17DF527D6EE1B0016E0DE /* chapterTen.h */,
 				2BB17DF627D6EE1B0016E0DE /* chapterTen.c */,
+			);
+			path = chapterTen;
+			sourceTree = "<group>";
+		};
+		2BB17E0527E81D610016E0DE /* chapterEleven */ = {
+			isa = PBXGroup;
+			children = (
 				2BB17DFA27D9F14A0016E0DE /* chapterEleven.h */,
 				2BB17DFB27D9F14A0016E0DE /* chapterEleven.c */,
 				2BB17DFE27D9FBC30016E0DE /* brick.txt */,
 			);
-			path = hello;
+			path = chapterEleven;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B81D05927A5199A007CFBDA /* hello */ = {
+		2B81D05927A5199A007CFBDA /* learnClangOnTheMac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B81D06127A5199A007CFBDA /* Build configuration list for PBXNativeTarget "hello" */;
+			buildConfigurationList = 2B81D06127A5199A007CFBDA /* Build configuration list for PBXNativeTarget "learnClangOnTheMac" */;
 			buildPhases = (
 				2B81D05627A5199A007CFBDA /* Sources */,
 				2B81D05727A5199A007CFBDA /* Frameworks */,
@@ -99,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = hello;
+			name = learnClangOnTheMac;
 			productName = hello;
-			productReference = 2B81D05A27A5199A007CFBDA /* hello */;
+			productReference = 2B81D05A27A5199A007CFBDA /* learnClangOnTheMac */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B81D05927A5199A007CFBDA /* hello */,
+				2B81D05927A5199A007CFBDA /* learnClangOnTheMac */,
 			);
 		};
 /* End PBXProject section */
@@ -145,7 +158,6 @@
 				2BB17DF727D6EE1B0016E0DE /* chapterTen.c in Sources */,
 				2BB17E0127E3003F0016E0DE /* chapterNine.c in Sources */,
 				2BB17DFC27D9F14A0016E0DE /* chapterEleven.c in Sources */,
-				2B81D06627B138AE007CFBDA /* isOdd.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B81D06127A5199A007CFBDA /* Build configuration list for PBXNativeTarget "hello" */ = {
+		2B81D06127A5199A007CFBDA /* Build configuration list for PBXNativeTarget "learnClangOnTheMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B81D06227A5199A007CFBDA /* Debug */,
